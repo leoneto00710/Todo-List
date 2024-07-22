@@ -76,12 +76,10 @@ export function App() {
   return (
     <div className='app'>
         <div><h1>Lista de Tarefas</h1></div>
-        {todos.length>4 && (
           <div className='search-container'>
             <Search search={search} setSearch={setSearch}/>
             <Filter filter={filter} setFilter={setFilter}/>
           </div>
-        )}
         {isCreating?(
           <TodoForm closeForm={closeForm} addTodo={addTodo}/>
           ):(

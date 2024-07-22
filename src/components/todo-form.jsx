@@ -25,13 +25,13 @@ export function TodoForm({closeForm, addTodo}){
                     onChange={(e) => setTitle(e.target.value)}
                     className="todo-form-input-title" 
                     type="text" 
-                    placeholder="digite o título" />
+                    placeholder="Digite o título" />
                     <p>Descrição</p>
                     <input
                     onChange={(e) => setText(e.target.value)}
                     className="todo-form-input-text" 
                     type="text" 
-                    placeholder="digite a descriçao" />
+                    placeholder="Digite a descrição" />
                 </div>
                 <div className="todo-form-btn">
                     <button type="submit">CRIAR</button>

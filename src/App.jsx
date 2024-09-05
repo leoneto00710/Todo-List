@@ -11,7 +11,7 @@ export function App() {
       id: 1,
       title: "Projeto para o fim do mês",
       text: "Criar funcionalidade x no sistema",
-      isCompleted: true,
+      isCompleted: false,
     },
     {
       id: 2,
@@ -35,7 +35,7 @@ export function App() {
       id: 5,
       title: "Treinamento da equipe",
       text: "Realizar treinamento sobre novas ferramentas",
-      isCompleted: false,
+      isCompleted: true,
     }
 ])
 
@@ -98,6 +98,7 @@ export function App() {
                   .filter((todo) => 
                     todo.text.toLowerCase().includes(search.toLowerCase()) ||
                     todo.title.toLowerCase().includes(search.toLowerCase()))
+              .reverse()
               .map((todo)=>(
                     <Todo 
                     key={todo.id} 
